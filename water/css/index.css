@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.container > div {
+  height: fit-content;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container > div > img {
+  width: 100%;
+}

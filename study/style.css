@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  position: relative;
+}
+.base {
+  font-size: 5em;
+  font-weight: bold;
+}
+h1 {
+  font-size: 10em;
+  font-weight: bold;
+}
+#person {
+  margin: 40px 0;
+}
+h3 {
+  font-size: 1.5em;
+  outline: n;
+  margin-bottom: 40px;
+}
+.plan {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+h4 {
+  font-size: 2em;
+  outline: none;
+}
+.name {
+  outline: none;
+}
+.opaect {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: steelblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .form {
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  padding-top: 40px;
+}
+.container .form h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container .form .form-item {
+  width: 100%;
+}
+.container .form .form-input {
+  border-bottom: 2px solid #fff;
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+.container .form .form-input > span {
+  color: #fff;
+  position: absolute;
+}
+.container .form .form-input input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+.container .form .loginButton {
+  margin: 20px 0;
+  width: 100%;
+  height: 50px;
+  background-color: lightblue;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.container .form .desc > span:nth-child(1) {
+  color: #fff;
+}
+.container .form .desc > span:nth-child(2) {
+  color: lightblue;
+}
+.active-span {
+  left: 0;
+  animation: focus 0.3s 1 forwards;
+  color: lightblue !important;
+}
+@keyframes focus {
+  from {
+    top: 0;
+  }
+  to {
+    top: -15px;
+  }
+}

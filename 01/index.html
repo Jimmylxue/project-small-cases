@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://vitepress-source.oss-cn-beijing.aliyuncs.com/icon.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="img-item">
+        <img src="./img/01.jpg" alt="" />
+      </div>
+      <div class="img-item">
+        <img src="./img/02.jpg" alt="" />
+      </div>
+      <div class="img-item expc">
+        <img src="./img/03.jpg" alt="" />
+      </div>
+      <div class="img-item">
+        <img src="./img/04.jpg" alt="" />
+      </div>
+      <div class="img-item">
+        <img src="./img/05.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+      let arr = [...document.getElementsByClassName('img-item')]
+      arr.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          arr.forEach(item => {
+            item.classList.remove('expc')
+          })
+          arr[index].classList.add('expc')
+        })
+      })
+    </script>
+  </body>
+</html>

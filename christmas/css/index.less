@@ -1,0 +1,400 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(232, 69, 118);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .center_container{
+    width: 800px;
+    height: 800px;
+    background-color: rgb(170, 217, 235);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::after{
+      content: '';
+      width: 805px;
+      height: 805px;
+      // background-color: red;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      border: 3px solid #fff;
+      border-radius: 50%;
+    }
+    .title{
+      position: absolute;
+      font-size: 50px;
+      margin-top: 50px;
+      color: #fff;
+      color: rgb(25, 169, 194);
+    }
+    .tree{
+      margin-top: 100px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      position: relative;
+      .lamp{
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 345, 55);
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+        transform: translateY(75px);
+        z-index: 11;
+        &::after{
+          content: '';
+          width: 50px;
+          height: 50px;
+          border:5px solid rgb(255, 207, 48);
+          // background-color:rgb(255, 207, 48) ;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+          z-index: -1;
+        }
+      }
+      .treepart{
+        border-style: solid;
+        border-width: 100px 70px 100px 70px;
+        border-color: transparent transparent rgb(26,95,35) transparent;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 10;
+        .treecenter{
+          border-style: solid;
+          border-width: 85px 55px 85px 55px;
+          border-color: transparent transparent rgb(46, 124, 50) transparent;
+          width: 0px;
+          height: 0px;
+          margin-top: 20px;
+          border-radius: 10px;
+        }
+        .ball{
+          width: 30px;
+          height: 30px;
+          background-color: rgb(251 ,94  ,147);
+          position: absolute;
+          z-index: 100;
+          top: 60px;
+          border-radius: 50%;
+          transform: translateX(-15px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(252, 144, 199);
+            border-radius: 50%;
+          }
+        }
+      }
+      .treepart2{
+        border-style: solid;
+        border-width: 120px 100px 120px 100px;
+        border-color: transparent transparent rgb(26,95,35) transparent;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 9;
+        transform: translateY(20px);
+        .treecenter{
+          border-style: solid;
+          border-width: 100px 80px 100px 80px;
+          border-color: transparent transparent rgb(46, 124, 50) transparent;
+          width: 0px;
+          height: 0px;
+          margin-top: 20px;
+          border-radius: 15px;
+        }
+        
+        .ball1{
+          width: 20px;
+          height: 20px;
+          background-color: rgb(200,162,255);
+          position: absolute;
+          z-index: 100;
+          top: 85px;
+          border-radius: 50%;
+          transform: translateX(-45px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(230, 201, 250);
+            border-radius: 50%;
+          }
+        }
+
+        .ball2{
+          width: 35px;
+          height: 35px;
+          background-color: rgb(132,225,250);
+          position: absolute;
+          z-index: 100;
+          top: 65px;
+          border-radius: 50%;
+          transform: translateX(25px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(172,240,255);
+            border-radius: 50%;
+          }
+        }
+      }
+      .treepart3{
+        border-style: solid;
+        border-width: 170px 150px 170px 150px;
+        border-color: transparent transparent rgb(26,95,35) transparent;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 8;
+        .treecenter{
+          border-style: solid;
+          border-width: 150px 125px 150px 125px;
+          border-color: transparent transparent rgb(46, 124, 50) transparent;
+          width: 0px;
+          height: 0px;
+          margin-top: 20px;
+          border-radius: 20px;
+        }
+        .ball1{
+          width: 30px;
+          height: 30px;
+          background-color:rgb(98,169 ,89) ;
+          position: absolute;
+          z-index: 100;
+          top: 120px;
+          border-radius: 50%;
+          transform: translateX(-75px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(127,229,129);
+            border-radius: 50%;
+          }
+        }
+        .ball2{
+          width: 35px;
+          height: 35px;
+          background-color: rgb(132,225,250);
+          position: absolute;
+          z-index: 100;
+          top: 95px;
+          border-radius: 50%;
+          transform: translateX(5px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(172,240,255);
+            border-radius: 50%;
+          }
+        }
+        .ball3{
+          width: 30px;
+          height: 30px;
+          background-color: rgb(200,162,255);
+          position: absolute;
+          z-index: 100;
+          top: 120px;
+          border-radius: 50%;
+          transform: translateX(75px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(230, 201, 250);
+            border-radius: 50%;
+          }
+        }
+      }
+      .treepart4{
+        border-style: solid;
+        border-width: 230px 200px 230px 200px;
+        border-color: transparent transparent rgb(26,95,35) transparent;
+        width: 0px;
+        height: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        position: absolute;
+        z-index: 7;
+        transform: translateY(-20px);
+        .treecenter{
+          border-style: solid;
+          border-width: 200px 170px 200px 170px;
+          border-color: transparent transparent rgb(46, 124, 50) transparent;
+          width: 0px;
+          height: 0px;
+          margin-top: 40px;
+          border-radius: 25px;
+        }
+        .ball1{
+          width: 30px;
+          height: 30px;
+          background-color: rgb(200,162,255);
+          position: absolute;
+          z-index: 100;
+          top: 180px;
+          border-radius: 50%;
+          transform: translateX(-115px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(230, 201, 250);
+            border-radius: 50%;
+          }
+        }
+
+        .ball2{
+          width: 35px;
+          height: 35px;
+          background-color: rgb(132,225,250);
+          position: absolute;
+          z-index: 100;
+          top: 140px;
+          border-radius: 50%;
+          transform: translateX(-45px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(172,240,255);
+            border-radius: 50%;
+          }
+        }
+        .ball3{
+          width: 30px;
+          height: 30px;
+          background-color: rgb(247,152,113);
+          position: absolute;
+          z-index: 100;
+          top: 180px;
+          border-radius: 50%;
+          transform: translateX(20px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(252 ,189 ,161);
+            border-radius: 50%;
+          }
+        }
+
+        .ball4{
+          width: 30px;
+          height: 30px;
+          background-color: rgb(200,162,255);
+          position: absolute;
+          z-index: 100;
+          top: 140px;
+          border-radius: 50%;
+          transform: translateX(80px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::after{
+            content: '';
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            background-color: rgb(230, 201, 250);
+            border-radius: 50%;
+          }
+        }
+      }
+      .wood{
+        width: 85px;
+        height: 170px;
+        background-color: rgb(117, 85, 73);
+        border-radius: 10px;
+        z-index: 12;
+        top: 400px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 6;
+        &::after{
+          content: '';
+          width: 65px;
+          height: 150px;
+          background-color: rgb(168, 130, 116);
+          position: absolute;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

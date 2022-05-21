@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div class="titleContainer">
+			<h1>诺基亚表情包生成器</h1>
+			<input
+				type="text"
+				value="有卧底！终止交易！"
+				placeholder="请输入短信内容"
+				oninput="changeText(event)"
+			/>
+			<!-- <div> -->
+			<div class="btn" onclick="downloadImg()">生成表情包</div>
+			<!-- </div> -->
+		</div>
+		<div class="imgContainer" id="imgContainer">
+			<img width="500px" src="./img/Nokia.pic.jpg" alt="" />
+			<div class="content"></div>
+		</div>
+		<script src="./js/html2canvas.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+.conatiner{
+  width: 90%;
+  height: 720px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  .img-item{
+    overflow: hidden;
+    margin: 0 20px;
+    transition: all 1s ease;
+    flex: 1;
+    border-radius: 20px;
+    img{
+      height: 100%;
+      transform: scale(1);
+      transition: all 1s ease-in-out;
+    }
+  }
+  .expc{
+    flex: 5;
+    img{
+      transform: scale(1.1);
+    }
+  }
+}
