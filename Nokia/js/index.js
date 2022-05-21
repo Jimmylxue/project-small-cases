@@ -1,4 +1,5 @@
 const messageText = document.querySelector('.content')
+const previewImg = document.getElementById('previewImg')
 
 function changeText(e) {
 	messageText.textContent = e.target.value
@@ -6,6 +7,7 @@ function changeText(e) {
 
 async function downloadImg() {
 	const canvas = await html2canvas(document.querySelector('#imgContainer'))
+	previewImg.src = canvas.toDataURL('image/png')
 	const blob = base64ToBlob(canvas.toDataURL('image/png'))
 	blob2DownLoad(blob)
 }
@@ -30,3 +32,11 @@ function blob2DownLoad(blob) {
 	aLink.href = URL.createObjectURL(blob)
 	aLink.click()
 }
+
+async function initPage() {
+	messageText.textContent = '有内鬼！终止交易！'
+	const canvas = await html2canvas(document.querySelector('#imgContainer'))
+	previewImg.src = canvas.toDataURL('image/png')
+}
+
+initPage()

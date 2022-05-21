@@ -49,6 +49,8 @@ body {
 .imgContainer {
   position: relative;
   user-select: none;
+  position: absolute;
+  top: -2000px;
 }
 .imgContainer .imgContainer {
   background-color: #f5efef;
@@ -64,4 +66,22 @@ body {
   font-size: 30px;
   padding: 5px;
   color: #504d57;
+}
+.tips {
+  color: #00000073;
+  margin-top: 10px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.siteMessage {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.siteMessage a {
+  margin: 0 10px;
 }
