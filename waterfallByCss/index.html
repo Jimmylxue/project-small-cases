@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>waterfall flow by css</title>
+		<style>
+			body {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				grid-gap: 10px;
+				/* Now only firefox support this attribute, which can auto complete waterfall flow */
+				grid-template-rows: masonry;
+			}
+			img {
+				width: 100%;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="./data.js"></script>
+		<script>
+			const body = document.body
+			pictures.map(item => {
+				const img = document.createElement('img')
+				img.src = item.img
+				body.appendChild(img)
+			})
+		</script>
+	</body>
+</html>
