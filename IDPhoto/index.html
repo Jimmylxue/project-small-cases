@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>camera</title>
+	</head>
+	<body>
+		<div id="contentHolder">
+			<video id="video" autoplay style="background-color: #000"></video>
+			<canvas id="canvas"></canvas>
+			<canvas id="canvas_bg" style="display: none"></canvas>
+			<img id="imgXX" src="" />
+		</div>
+		<button id="btn_snap" onclick="takePhoto()">拍照</button>
+		<input type="color" oninput="changeBgColor(this.value)" value="#0066cc" />
+		<script src="./tf.min.js"></script>
+		<script src="./main.js"></script>
+		<script>
+			const cvs = document.getElementById('canvas')
+			const video = document.getElementById('video')
+			const canvasBg = document.getElementById('canvas_bg')
+			cvs.width =
+				cvs.height =
+				video.width =
+				video.height =
+				canvasBg.width =
+				canvasBg.height =
+					400
+			const ctxBg = canvasBg.getContext('2d')
+
+			function changeBgColor(v) {
+				ctxBg.clearRect(0, 0, cvs.width, cvs.height)
+				ctxBg.fillStyle = v || '#06c'
+				ctxBg.fillRect(0, 0, cvs.width, cvs.height)
+			}
+			function takePhoto() {
+				document.getElementById('imgXX').src = canvas.toDataURL('image/png')
+			}
+			changeBgColor()
+			main()
+		</script>
+	</body>
+</html>
