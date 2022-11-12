@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  border: 1px solid #3498db;
+}
+
+.item{
+  width: 200px;
+  height: 200px;
+  background-color: #1abc9c;
+  display: inline-block;
+}
