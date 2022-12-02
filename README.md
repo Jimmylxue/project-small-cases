@@ -29,7 +29,7 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
   >
   > ![效果图](https://vitepress-source.oss-cn-beijing.aliyuncs.com/WechatIMG78.png)
 
-- [x] [文本动画](http://www.jimmyxuexue.top:667/tetxAnimate/)
+- [x] [文本动画](http://www.jimmyxuexue.top:667/textAnimate/)
 
 - [x] [圣诞树](http://www.jimmyxuexue.top:667/christmas/)
 
