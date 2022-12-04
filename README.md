@@ -31,6 +31,8 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [文本动画](http://www.jimmyxuexue.top:667/textAnimate/)
 
+- [x] [codeRain](http://www.jimmyxuexue.top:667/codeRain/)
+
 - [x] [圣诞树](http://www.jimmyxuexue.top:667/christmas/)
 
 - [x] [学习时钟](http://www.jimmyxuexue.top:667/study/)
