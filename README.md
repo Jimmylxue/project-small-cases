@@ -14,6 +14,8 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [诺基亚表情包生成器](http://www.jimmyxuexue.top:667/Nokia/)
 
+- [x] [五子棋小游戏](http://www.jimmyxuexue.top:667/gobang/)
+
 - [x] [拍照相机](http://www.jimmyxuexue.top:667/camera/)
 
   > 由于没有配置 https 无权限打开相机（浏览器安全限制），大家可以自行克隆至本地本地运行（localhost 拥有所有权限）
