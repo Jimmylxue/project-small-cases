@@ -1,0 +1,24 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #34495e;
+}
+#app{
+  font-size: 6vw;
+  /* 为文字设置背景颜色 */
+  background: url(https://www.dreamplan.cn/baidu-rmb-video-cover-1/d11101af738c4a3c0fa477d8334f1101.jpeg) no-repeat center/cover;
+  /* 文字描边 */
+  text-stroke:2px #fff;
+  /* 兼容 webkit 浏览器 */
+  -webkit-text-stroke:2px #fff;
+  /* 背景选透为文字 */
+  background-clip: text;
+  /* 兼容 webkit 浏览器 */
+  -webkit-background-clip:text;
+  /* 将默认文字颜色设为透明 */
+  color:transparent;
+}

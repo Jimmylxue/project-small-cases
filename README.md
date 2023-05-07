@@ -16,6 +16,8 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [五子棋小游戏](http://www.jimmyxuexue.top:667/gobang/)
 
+- [x] [文字背景](http://www.jimmyxuexue.top:667/textBg/)
+
 - [x] [拍照相机](http://www.jimmyxuexue.top:667/camera/)
 
   > 由于没有配置 https 无权限打开相机（浏览器安全限制），大家可以自行克隆至本地本地运行（localhost 拥有所有权限）
@@ -33,7 +35,7 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [文本动画](http://www.jimmyxuexue.top:667/textAnimate/)
 
-- [x] [codeRain](http://www.jimmyxuexue.top:667/codeRain/)
+- [x] [codeRain 代码雨](http://www.jimmyxuexue.top:667/codeRain/)
 
 - [x] [打字机效果](http://www.jimmyxuexue.top:667/typewriter/)
 
