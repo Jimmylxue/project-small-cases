@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  z-index: 4;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.container img {
+  width: 300px;
+  height: 170px;
+  margin: 20px 0;
+  transition: opacity ease-in-out 0.5;
+  -webkit-transition: height 0.3s ease-out, opacity 0.3s ease 0.5s;
+  -moz-transition: height 0.3s ease-out, opacity 0.3s ease 0.5s;
+  -o-transition: height 0.3s ease-out, opacity 0.3s ease 0.5s;
+  transition: height 0.3s ease-out, opacity 0.3s ease 0.5s;
+}
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

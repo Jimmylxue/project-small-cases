@@ -18,6 +18,8 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [文字背景](http://www.jimmyxuexue.top:667/textBg/)
 
+- [x] [自动获取图片背景](http://www.jimmyxuexue.top:667/autoBgColor/)
+
 - [x] [拍照相机](http://www.jimmyxuexue.top:667/camera/)
 
   > 由于没有配置 https 无权限打开相机（浏览器安全限制），大家可以自行克隆至本地本地运行（localhost 拥有所有权限）
