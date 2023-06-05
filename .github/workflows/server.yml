@@ -1,0 +1,25 @@
+name: 打包server
+
+on:
+  push:
+    # push 代码的时候 哪个分支会受到影响 这里是 master 主分支
+    branches:
+      - server-prod
+
+# 推送之后执行一系列的任务
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 获取代码
+      - name: executing remote ssh commands using password
+        # 使用action库 action/checkout获取大妈
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.PRIVATE_HOST }}
+          username: root
+          password: ${{ secrets.PRIVATE_PASSWORD }}
+          port: 22
+          script: |
+            cd /www/server/nginx/html/project-small-cases/
+            git pull
