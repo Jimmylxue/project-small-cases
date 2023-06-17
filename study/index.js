@@ -67,7 +67,7 @@ async function changeBg() {
 	let bingBg = ''
 	if (String(hasDataFlag) !== localTime) {
 		const res = await axios.get(
-			'http://www.jimmyxuexue.top:9999/bingBg/today?UHD=true'
+			'https://api.jimmyxuexue.top/bingBg/today?UHD=true'
 		)
 		if (res.data.code === 200) {
 			bingBg = res.data.result
