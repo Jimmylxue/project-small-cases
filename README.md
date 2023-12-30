@@ -69,6 +69,8 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [inline-block 显示间距问题](https://case.jimmyxuexue.top/inline-block/)
 
+- [x] [拖拽的基本实现](https://case.jimmyxuexue.top/drag/)
+
   > 解析请看对应 README.md
 
 ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️

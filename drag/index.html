@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>拖拽demo</title>
+		<style>
+			body {
+				display: flex;
+			}
+			.box1,
+			.box2 {
+				width: 300px;
+				height: 600px;
+				border: 1px solid #ccc;
+			}
+			.box2 {
+				margin-left: 50px;
+			}
+
+			.item {
+				width: 100px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: skyblue;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="item" draggable="true" ondragstart="dragStart(event,'手机')">
+				手机
+			</div>
+			<div class="item" draggable="true" ondragstart="dragStart(event,'电脑')">
+				电脑
+			</div>
+			<div class="item" draggable="true" ondragstart="dragStart(event,'耳机')">
+				耳机
+			</div>
+		</div>
+		<div
+			class="box2"
+			ondrop="dropEnd(event)"
+			ondragover="dragOver(event)"
+		></div>
+	</body>
+
+	<script>
+		const box2 = document.querySelector('.box2')
+		function dragStart(e, device) {
+			e.dataTransfer.setData('device', device)
+		}
+		function dropEnd(e) {
+			var transferredDevice = e.dataTransfer.getData('device')
+			const div = document.createElement('div')
+			div.textContent = transferredDevice
+			div.classList.add('item')
+			box2.appendChild(div)
+		}
+		function dragOver(e) {
+			e.preventDefault()
+		}
+	</script>
+</html>
