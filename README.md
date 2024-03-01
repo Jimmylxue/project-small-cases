@@ -71,6 +71,8 @@ hello 你们好，我是 Jimmy😁，一名三线小前端，感谢您的访问�
 
 - [x] [拖拽的基本实现](https://case.jimmyxuexue.top/drag/)
 
+- [x] [音频频谱图](https://case.jimmyxuexue.top/spectrogram/)
+
   > 解析请看对应 README.md
 
 ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️
